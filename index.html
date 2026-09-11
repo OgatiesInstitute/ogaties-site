@@ -31,16 +31,26 @@
             width: 100%;
         }
         /* BVLGARI調：全大文字 ＋ 広い字間 ＋ 直立ローマン体 */
+        /* PC・タブレット用の基本設定 */
         h1 {
             font-family: 'Cinzel', serif;
             font-size: 2.1rem;
             font-weight: 400;
             font-style: normal;
-            letter-spacing: 0.28em; /* 高級感を最大化する字間 */
-            text-transform: uppercase; /* 確実に全大文字化 */
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
             margin-bottom: 0.8rem;
             color: #ffffff;
-            text-indent: 0.28em; /* 中央配置の視覚的バランス補線 */
+            text-indent: 0.28em;
+        }
+
+        /* スマホ画面（幅480px以下）のときだけ1行に収める設定 */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.35rem;     /* 文字サイズを少し小さく */
+                letter-spacing: 0.16em; /* 字間を少し詰める */
+                text-indent: 0.16em;
+            }
         }
         p.subtitle {
             font-size: 0.9rem;
