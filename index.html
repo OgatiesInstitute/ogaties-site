@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toshiaki Ogata</title>
+    <!-- Aviano同系統の高級ラグジュアリーフォント（Cinzel）を読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+    
     <style>
         * {
             box-sizing: border-box;
@@ -11,8 +16,8 @@
             padding: 0;
         }
         body {
-            background-color: #0d0d0d;
-            color: #e6e6e6;
+            background-color: #000000;
+            color: #ffffff;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             font-style: italic;
             display: flex;
@@ -25,31 +30,36 @@
             max-width: 620px;
             width: 100%;
         }
+        /* 1. ブルガリ（Aviano）風のラグジュアリータイトル */
         h1 {
-            font-size: 1.8rem;
-            font-weight: 500;
-            letter-spacing: 0.08em;
+            font-family: 'Cinzel', serif;
+            font-size: 2.1rem;
+            font-weight: 400;
+            font-style: normal; /* ブルガリ調の立ち姿を保つためノーマル指定 */
+            letter-spacing: 0.25em; /* 高級感を出す大幅な字間 */
+            text-transform: uppercase;
             margin-bottom: 0.8rem;
             color: #ffffff;
-            font-style: italic;
+            text-indent: 0.25em; /* 中央揃え・バランスの微調整 */
         }
         p.subtitle {
-            font-size: 0.95rem;
-            line-height: 1.6;
+            font-size: 0.9rem;
+            line-height: 1.5;
             color: #888888;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2.8rem; /* Space: 下部との間隔をしっかり確保 */
             font-weight: 300;
             font-style: italic;
         }
+        /* 3. Research/Models 以下のフォントを小さく、コンパクトに詰め */
         .section {
-            margin-bottom: 1.8rem;
+            margin-bottom: 1.2rem; /* セクション間の詰まり具合 */
         }
         .label {
-            font-size: 0.85rem;
+            font-size: 0.75rem; /* サイズ縮小 */
             color: #666666;
             letter-spacing: 0.05em;
             text-transform: uppercase;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.2rem; /* ラベル下の幅を詰める */
             display: block;
             font-style: italic;
         }
@@ -57,8 +67,8 @@
             list-style: none;
         }
         ul.link-list li {
-            margin-bottom: 0.6rem;
-            font-size: 0.95rem;
+            margin-bottom: 0.38rem; /* リスト間の幅を詰める */
+            font-size: 0.85rem; /* サイズ縮小 */
             font-style: italic;
         }
         a {
@@ -96,8 +106,9 @@
         <div class="section">
             <span class="label">Data / Publications</span>
             <ul class="link-list">
-                <li><a href="https://zenodo.org/records/20837647" target="_blank" rel="noopener">CERN Zenodo Dataset #20837647</a></li>
-                <li><a href="https://zenodo.org/records/20966791" target="_blank" rel="noopener">CERN Zenodo Dataset #20966791</a></li>
+                <!-- 2. "Dataset"を削除し "CERN Zenodo" のみにシンプル化 -->
+                <li><a href="https://zenodo.org/records/20837647" target="_blank" rel="noopener">CERN Zenodo #20837647</a></li>
+                <li><a href="https://zenodo.org/records/20966791" target="_blank" rel="noopener">CERN Zenodo #20966791</a></li>
                 <li><a href="https://www.amazon.com/stores/author/B0GZX3ZDRX/about" target="_blank" rel="noopener">Amazon Author Biography</a></li>
             </ul>
         </div>
